@@ -32,6 +32,7 @@ namespace libp2p::multi {
       RAW = 0x55,
       DAG_PB = 0x70,
       DAG_CBOR = 0x71,
+      BLAKE2B_256 = 0xb220,
       FILECOIN_COMMITMENT_UNSEALED = 0xf101,
       FILECOIN_COMMITMENT_SEALED = 0xf102,
     };
@@ -60,6 +61,8 @@ namespace libp2p::multi {
           return "dag-pb";
         case Code::DAG_CBOR:
           return "dag-cbor";
+        case Code::BLAKE2B_256:
+          return "blake2b-256";
         case Code::FILECOIN_COMMITMENT_UNSEALED:
           return "fil-commitment-unsealed";
         case Code::FILECOIN_COMMITMENT_SEALED:
